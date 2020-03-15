@@ -1,0 +1,29 @@
+.titles{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.carm{
+    margin-left: -15px;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.space {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 130px 20px 100px;
+}
+
+p{
+    font-weight: 600;
+    cursor: pointer;
+
+}

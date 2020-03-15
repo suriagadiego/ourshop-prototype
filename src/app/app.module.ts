@@ -8,6 +8,8 @@ import { ProductsComponent } from './shared/products/products.component';
 import { ShopEverythingComponent } from './shop-everything/shop-everything.component';
 import { FooterComponent } from './footer/footer.component';
 import { FulfillmentsComponent } from './fulfillments/fulfillments.component';
+import { AdbigComponent } from './adbig/adbig.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { FulfillmentsComponent } from './fulfillments/fulfillments.component';
     ProductsComponent,
     ShopEverythingComponent,
     FooterComponent,
-    FulfillmentsComponent
+    FulfillmentsComponent,
+    AdbigComponent
   ],
   imports: [
     BrowserModule

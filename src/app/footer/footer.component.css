@@ -12,7 +12,7 @@ a {
 }
 p  {
     font-size: 14px;
-    font-weight: 550;
+    /* font-weight: 550; */
     padding-top: 10px;
 }
 .space {
