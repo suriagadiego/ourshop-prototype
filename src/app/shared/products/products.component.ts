@@ -1,18 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/product.model';
+import { Component, OnInit, Input } from "@angular/core";
+import { Product } from "src/app/_models/product.model";
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  selector: "app-products",
+  templateUrl: "./products.component.html",
+  styleUrls: ["./products.component.css"]
 })
 export class ProductsComponent implements OnInit {
+  @Input() itemss: Array<any> = [];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  productModel = new Product("assets/images/products/CHIVAS XV.jfif","Chivas Regal","XV 1L","USD 200.00")
-
+  ngOnInit() {}
 }
