@@ -1,13 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 a {
   color: black;
   font-weight: 620;
   font-size: 13px;
 }
 
-.header-ul {
-  margin-left: 30px;
-  margin-right: 70px;
-}
 input:focus {
   outline: none;
 }
@@ -39,8 +39,8 @@ ul {
 
 .header-filler {
   margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .search-textbox {
@@ -89,4 +89,18 @@ ul {
   width: 27px;
   zoom: 0.8;
   top: -13px;
+}
+
+.items:hover {
+  border-bottom: 1.5px solid #f15b51;
+}
+.megamenu {
+  height: 650px;
+  position: absolute;
+  /* position: fixed; */
+  background-color: blue;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 1300px;
 }

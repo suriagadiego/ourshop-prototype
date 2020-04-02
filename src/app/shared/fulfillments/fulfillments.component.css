@@ -1,31 +1,35 @@
-
-
 /* ========================== */
-
+* {
+  margin: 0;
+  padding: 0;
+}
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .space {
-    display: flex;
-    align-items: stretch; /* Default */
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 460px;
-    padding-right: 480px;
-    margin-top: -70px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -70px;
 }
 
-img{
-    width: 140px;
-    height: 140px;
-    margin-right: 20px;
+img {
+  width: 140px;
+  height: 140px;
+  /* margin-right: 20px; */
 }
 p {
-    font-weight: bold;
-    border: black;
+  font-weight: bold;
+  border: black;
 }
 
-a{
-    color: black;
+a {
+  color: black;
+}
+
+.wrapper-icons {
+  margin: -60px auto 0;
+  width: 630px;
 }

@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <ul class="space">
     <li>
       <img src="assets/images/adver/1z.jpg" alt="asd" />
@@ -12,4 +12,37 @@
       </div>
     </li>
   </ul>
+</div> -->
+<p class="titles">You'll Love These</p>
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1270"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  ></div>
+  <ng-template #prev>
+    <img
+      src="assets/images/left-arrow.png"
+      id="left"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #next>
+    <img
+      src="assets/images/right-arrow.png"
+      id="right"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <div *ngFor="let item of items; let i = index" class="items">
+      <img class="ads" src="{{ item }}" alt="{{ item }}" />
+    </div>
+  </ng-template>
 </div>

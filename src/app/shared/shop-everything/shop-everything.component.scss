@@ -17,7 +17,7 @@ li{
 .titles {
   font-size: 25px;
   margin-top: 20px;
-  margin-left: 120px;
+  // margin-left: 120px;
 }
 p {
   font-weight: 600;
@@ -35,7 +35,7 @@ p {
   max-width: 300px;
   height: 400px;
   background: white;
-  padding: 4px;
+  padding-right: 8px;
 }
 
 #left,
@@ -48,8 +48,8 @@ img {
 }
 
 #left {
-  margin-left: 80px;
+  margin-left: -30px;
 }
 #right {
-  margin-right: 80px;
+  margin-right: -30px;
 }

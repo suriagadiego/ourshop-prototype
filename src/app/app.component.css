@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .footer {
   left: 0;
   bottom: 0;
   width: 100%;
 }
 
-.ads {
-  margin-left: 70px;
+.wrapper {
+  margin: 0 auto;
+  width: 1300px;
 }

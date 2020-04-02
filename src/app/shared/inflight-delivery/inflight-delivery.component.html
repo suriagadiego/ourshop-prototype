@@ -1,112 +1,152 @@
-<div class="car">
-    <div class="titles">
-        <p>Best Sellers</p>
-            <div class="container carm">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products></span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                </div>
-            </div>
+<p class="titles">Work From Home Essentials</p>
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1290"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  ></div>
+  <ng-template #prev>
+    <img
+      src="assets/images/left-arrow.png"
+      id="left"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #next>
+    <img
+      class="l"
+      src="assets/images/right-arrow.png"
+      id="right"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <!-- <div class="items">
+                <app-products [itemss]="items"></app-products>
+              </div> -->
+    <div *ngFor="let item of items; let i = index" class="items">
+      <!-- <b>index number {{ i }}</b> -->
+      <app-products [itemss]="item"></app-products>
     </div>
+  </ng-template>
 </div>
-<br>
-<div class="car">
-    <div class="titles">
-        <p>Treat Yourself Right</p>
-            <div class="container carm">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products></span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                </div>
-            </div>
+
+<p class="titles">Delights at your Doorstep</p>
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1290"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  ></div>
+  <ng-template #prev>
+    <img
+      src="assets/images/left-arrow.png"
+      id="left"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #next>
+    <img
+      src="assets/images/right-arrow.png"
+      id="right"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <!-- <div class="items">
+                <app-products [itemss]="items"></app-products>
+              </div> -->
+    <div *ngFor="let item of items; let i = index" class="items">
+      <!-- <b>index number {{ i }}</b> -->
+      <app-products [itemss]="item"></app-products>
     </div>
+  </ng-template>
 </div>
-<br><div class="car">
-    <!-- car = Carousel -->
-    <div class="titles">
-        <p>Family Favorites</p>
-            <div class="container carm">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products></span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                </div>
-            </div>
+
+<p class="titles">Get your Glam</p>
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1290"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  ></div>
+  <ng-template #prev>
+    <img
+      src="assets/images/left-arrow.png"
+      id="left"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #next>
+    <img
+      src="assets/images/right-arrow.png"
+      id="right"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <!-- <div class="items">
+                <app-products [itemss]="items"></app-products>
+              </div> -->
+    <div *ngFor="let item of items; let i = index" class="items">
+      <!-- <b>index number {{ i }}</b> -->
+      <app-products [itemss]="item"></app-products>
     </div>
+  </ng-template>
 </div>
-<br>
-<div class="car">
-    <div class="titles">
-        <p>Timeless Classics</p>
-            <div class="container carm">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products></span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                </div>
-            </div>
+
+<p class="titles">Popular Pours</p>
+<div id="container">
+  <div
+    ng2-carouselamos
+    class="slides-wrapper"
+    [items]="items"
+    [width]="1290"
+    [$prev]="prev"
+    [$next]="next"
+    [$item]="item"
+  ></div>
+  <ng-template #prev>
+    <img
+      src="assets/images/left-arrow.png"
+      id="left"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #next>
+    <img
+      src="assets/images/right-arrow.png"
+      id="right"
+      style="cursor: pointer;"
+    />
+  </ng-template>
+
+  <ng-template #item let-item let-i="index">
+    <!-- <div class="items">
+                <app-products [itemss]="items"></app-products>
+              </div> -->
+    <div *ngFor="let item of items; let i = index" class="items">
+      <!-- <b>index number {{ i }}</b> -->
+      <app-products [itemss]="item"></app-products>
     </div>
-</div>
-<div>
-    <app-adbig></app-adbig>
-</div>
-<app-brands-list></app-brands-list>
-<div class="car">
-    <div class="titles">
-        <p>Dont Miss These</p>
-            <div class="container carm">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products></span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <span><app-products></app-products>  </span>
-                    </div>
-                </div>
-            </div>
-    </div>
+  </ng-template>
 </div>
