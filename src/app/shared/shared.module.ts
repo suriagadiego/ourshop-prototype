@@ -13,6 +13,8 @@ import { PickupAirportComponent } from "./pickup-airport/pickup-airport.componen
 import { ShopEverythingComponent } from "./shop-everything/shop-everything.component";
 import { AppRoutingModule } from "../app-routing.module";
 import { Ng2CarouselamosModule } from "ng2-carouselamos";
+import { WindowSizeDirective } from '../_directives/window-size.directive';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { Ng2CarouselamosModule } from "ng2-carouselamos";
     InflightDeliveryComponent,
     HomeDeliveryComponent,
     PickupAirportComponent,
-    ShopEverythingComponent
+    ShopEverythingComponent,
+    WindowSizeDirective
   ],
   imports: [CommonModule, AppRoutingModule, Ng2CarouselamosModule],
   exports: [
