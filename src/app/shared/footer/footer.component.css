@@ -118,4 +118,7 @@ span {
     max-width: 767px;
     width: 90%;
   }
+  li {
+    text-align: left;
+  }
 }

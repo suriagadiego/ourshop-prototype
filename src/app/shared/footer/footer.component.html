@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<div class="bot">
+<div class="bot" *ngIf="width > 767">
   <div class="space wrapper">
     <ul style="float: left;">
       <li><b>Customer Service</b></li>
@@ -171,4 +171,60 @@
       do so with OURSHOP’s selection of local picks.
     </p>
   </div>
+</div>
+
+<div *ngIf="width < 767">
+  <ul style="float: left;">
+    <li><b>Connect With Us</b></li>
+    <li>Get first access to exclusive offers!</li>
+    <li>
+      <div class="search-filler">
+        <input class="search-textbox" type="text" placeholder="Email Address" />
+        <input
+          class="icon"
+          type="image"
+          src="assets/images/arrow-right-light.png"
+          alt="arrow-right-light"
+        />
+      </div>
+    </li>
+    <li><a href="#">Duty Allowances</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li></li>
+    <li>
+      <ul>
+        <li><b>100% Secure Shopping by</b></li>
+        <li>
+          <div>
+            <span
+              ><img src="assets/images/vi.png" alt="visa" width="60px"
+            /></span>
+            <span
+              ><img src="assets/images/mc.png" alt="master card" width="60px"
+            /></span>
+            <span
+              ><img src="assets/images/ap.png" alt="ali pay" width="60px"
+            /></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <span
+              ><img src="assets/images/up.png" alt="union pay" width="60px"
+            /></span>
+            <span
+              ><img src="assets/images/bp.png" alt="big pay" width="60px"
+            /></span>
+            <span
+              ><img src="assets/images/meps.png" alt="fpx" width="60px"
+            /></span>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div>
+  <img src="assets/images/fb-icon-dark.png" alt="fb" />
+  <img src="assets/images/ig-icon-dark.png" alt="ig" />
 </div>
