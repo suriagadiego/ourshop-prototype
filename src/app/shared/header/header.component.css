@@ -81,7 +81,7 @@ ul {
   width: 30px;
   height: auto;
 }
-.icon{
+.icon {
   width: 30px;
 }
 
@@ -103,9 +103,7 @@ ul {
 .wrapper {
   margin: 0 auto;
   max-width: 1300px;
-
 }
-
 
 .sidenav {
   height: 100%;

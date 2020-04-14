@@ -5,16 +5,18 @@ import { AdvertisementsService } from "src/app/_services/advertisements.service"
 @Component({
   selector: "app-shop-everything",
   templateUrl: "./shop-everything.component.html",
-  styleUrls: ["./shop-everything.component.scss"]
+  styleUrls: ["./shop-everything.component.scss"],
 })
 export class ShopEverythingComponent implements OnInit {
   items: Array<any> = [];
   adc: String[] = [];
-  width: number
-
-	@HostListener('window:resize', ['$event'])
-	onResize(event) {
-		this.width = event.target.innerWidth;
+  width: number;
+  new: number;
+  @HostListener("window:resize", ["$event"])
+  onResize(event) {
+    this.width = event.target.innerWidth;
+    this.new = this.width - 250;
+    console.log(this.width);
   }
 
   constructor(
@@ -26,6 +28,5 @@ export class ShopEverythingComponent implements OnInit {
     this.items = this.productsService.items;
     this.adc = this.advertisementService.adc;
     this.width = window.innerWidth;
-    
   }
 }

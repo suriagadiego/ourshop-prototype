@@ -7,6 +7,13 @@ li {
   list-style: none;
   padding: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -24,9 +31,19 @@ p {
   justify-content: space-between;
   width: 100%;
   padding-top: 20px;
+  margin: auto;
   /* padding: 20px 100px 20px 70px; */
   /* margin: auto; */
 }
+
+.try {
+  margin: auto;
+}
+.main {
+  height: 320px;
+  background-color: #e5e5e5;
+}
+
 .desc {
   text-align: justify;
   padding: 5px;
@@ -76,11 +93,29 @@ span {
   width: 90%;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 767px) and (max-width: 1023px) {
   .top {
     background: #213342;
     color: white;
     text-align: center;
     height: 230px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bot {
+    background-color: white;
+  }
+  .desc {
+    text-align: justify;
+    padding: 5px;
+    margin: 20px 100px;
+    font-size: 13px;
+    background: white;
+  }
+  .wrapper {
+    margin: 0 auto;
+    max-width: 767px;
+    width: 90%;
   }
 }

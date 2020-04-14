@@ -1,5 +1,6 @@
-<div (window:resize)="onResize($event)"  *ngIf = "width > 1024"> <!-- *ngIf = "width > 1024" -->
-  <h1> ->>{{ width }} </h1>
+<div (window:resize)="onResize($event)" *ngIf="width > 1024">
+  <!-- *ngIf = "width > 1024" -->
+  <!-- <h1> ->>{{ width }} </h1> -->
   <div class="wrapper">
     <div>
       <div class="header-filler center">
@@ -66,35 +67,35 @@
     </div>
   </div>
   <!-- TODO IMPLEMENT HOVER EFFECT ON MEGAMENU -->
-  <div class="megamenu"></div>  
+  <div class="megamenu"></div>
 </div>
 <!-- mobile -->
-<div *ngIf = "width < 1024">
-    <div id="mySidenav" class="sidenav">
-      <a class="closebtn" (click)="closeNavbar()" style="cursor: pointer;">&times;</a>
-      <li *ngFor="let item of categories">
-        <a class="items" style="cursor: pointer;">{{ item.name }}</a>
-      </li>
-    </div>
-    <ul class="header-ul">
-      <li>
-        <span (click)="openNavbar()" style="font-size:30px;cursor:pointer" >&#9776;</span>
-      </li>
-      <li>
-        <a href="https://www.ourshop.com/">
-          <img id="logo" src="assets/images/ourshop_new_logo.png" />
-        </a>
-      </li>
-      <li>
+<div *ngIf="width < 1024">
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" (click)="closeNavbar()" style="cursor: pointer;"
+      >&times;</a
+    >
+    <li *ngFor="let item of categories">
+      <a class="items" style="cursor: pointer;">{{ item.name }}</a>
+    </li>
+  </div>
+  <ul class="header-ul">
+    <li>
+      <span (click)="openNavbar()" style="font-size: 30px; cursor: pointer;"
+        >&#9776;</span
+      >
+    </li>
+    <li>
+      <a href="https://www.ourshop.com/">
+        <img id="logo" src="assets/images/ourshop_new_logo.png" />
+      </a>
+    </li>
+    <li>
       <a>
-        <img class="icon" src="assets/images/search-icon@2x.png">
+        <img class="icon" src="assets/images/search-icon@2x.png" />
       </a>
       <a>
-        <img
-          class="track-icon"
-          src="assets/images/cart-icon.svg"
-          href=""
-        />
+        <img class="track-icon" src="assets/images/cart-icon.svg" href="" />
       </a>
     </li>
   </ul>

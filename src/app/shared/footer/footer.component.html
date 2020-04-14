@@ -1,25 +1,53 @@
-<div class="top" >
-  <div class="wrapper">
-    <div class="center" *ngIf = "width < 1024 && width > 767">
-      <h5>Why Shop With Us?</h5>
+<div class="top center" *ngIf="width > 767">
+  <div class="wrapper float">
+    <div>
+      <div class="center" *ngIf="width < 1024 && width > 767">
+        <h5>Why Shop With Us?</h5>
+      </div>
+      <ul class="space">
+        <li *ngIf="width > 1024" class="center">
+          <h4 style="vertical-align: center;">Why Shop With Us?</h4>
+        </li>
+        <li>
+          <img src="assets/images/reason_0.png" alt="" width="70px" />
+          <p>Guaranteed Authentic</p>
+        </li>
+        <li>
+          <img src="assets/images/reason_1.png" alt="" width="70px" />
+          <p>Exclusive Products</p>
+        </li>
+        <li>
+          <img src="assets/images/reason_2.png" alt="" width="70px" />
+          <p>Safe & Secure Payment</p>
+        </li>
+        <li>
+          <img src="assets/images/reason_3.png" alt="" width="70px" />
+          <p>Earn & Pay with Points</p>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
+
+<div *ngIf="width < 767" class="main">
+  <div class="wrapper">
+    <h6 align="center" class="mb0">Why Shop With Us?</h6>
     <ul class="space">
-      <li *ngIf = " width > 1024">
-        <h4 style="margin: auto;">Why Shop With Us?</h4>
-      </li>
-      <li>
-        <img src="assets/images/reason_0.png" alt="" width="70px" />
-        <p>Guaranteed Authentic</p>
-      </li>
-      <li>
-        <img src="assets/images/reason_1.png" alt="" width="70px" />
-        <p>Exclusive Products</p>
-      </li>
-      <li>
+      <li class="try">
         <img src="assets/images/reason_2.png" alt="" width="70px" />
         <p>Safe & Secure Payment</p>
       </li>
-      <li>
+      <li class="try">
+        <img src="assets/images/reason_3.png" alt="" width="70px" />
+        <p>Earn & Pay with Points</p>
+      </li>
+    </ul>
+    <ul class="space">
+      <li class="try">
+        <img src="assets/images/reason_2.png" alt="" width="70px" />
+        <p>Safe & Secure Payment</p>
+      </li>
+      <li class="try">
         <img src="assets/images/reason_3.png" alt="" width="70px" />
         <p>Earn & Pay with Points</p>
       </li>
@@ -49,7 +77,9 @@
       <li><b>100% Secure Shopping by</b></li>
       <li>
         <div>
-          <span><img src="assets/images/vi.png" alt="visa" width="60px"/></span>
+          <span
+            ><img src="assets/images/vi.png" alt="visa" width="60px"
+          /></span>
           <span
             ><img src="assets/images/mc.png" alt="master card" width="60px"
           /></span>
@@ -95,11 +125,11 @@
       <li></li>
       <li class="space">
         <span>
-          <b style="vertical-align: middle; line-height: 64px; "
+          <b style="vertical-align: middle; line-height: 64px;"
             >Connect With Us</b
           >
         </span>
-        <span style="vertical-align: middle; line-height: 64px; ">
+        <span style="vertical-align: middle; line-height: 64px;">
           <img src="assets/images/fb-icon-dark.png" alt="fb" />
           <img src="assets/images/ig-icon-dark.png" alt="ig" />
         </span>

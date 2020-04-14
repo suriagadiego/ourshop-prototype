@@ -1,9 +1,12 @@
-<div >
+<div>
   <div>
     <app-header></app-header>
   </div>
-  <div>
+  <div *ngIf="innerWidth > 993">
     <img src="assets/images/banner.jpg" width="100%" alt="banner" />
+  </div>
+  <div *ngIf="innerWidth < 993">
+    <img src="assets/images/banner2.jpg" width="100%" alt="banner" />
   </div>
   <!-- <app-fulfillments></app-fulfillments> -->
   <div class="wrapper">
@@ -11,7 +14,7 @@
       <app-adbox></app-adbox>
     </div>
     <div>
-      <!-- <router-outlet></router-outlet> -->
+      <router-outlet></router-outlet>
     </div>
   </div>
   <div class="footer">
