@@ -9,6 +9,8 @@ export class AdvertisementsService {
     "assets/images/adver/adc1.jpg",
     "assets/images/adver/adc2.jpg",
     "assets/images/adver/adc3.jpg",
-    "assets/images/adver/adc4.jpg"
+    "assets/images/adver/adc4.jpg",
+    "assets/images/adver/adc5.jpg",
+    "assets/images/adver/adc6.jpg"
   ];
 }

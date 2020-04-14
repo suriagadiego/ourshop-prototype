@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, HostBinding } from "@angular/core";
+import { Component, OnInit, HostListener} from "@angular/core";
 import categories from "../../_files/categories.json";
 
 @Component({
@@ -7,16 +7,15 @@ import categories from "../../_files/categories.json";
   styleUrls: ["./header.component.css"]
 })
 export class HeaderComponent implements OnInit {
-  width: number;
-  @HostBinding('class.navbar-opened') navbarOpened = false;
+  width: number
 
 	@HostListener('window:resize', ['$event'])
 	onResize(event) {
 		this.width = event.target.innerWidth;
   }
+
   constructor() {}
-  
-  
+
   img: string = "./pictures/ourshop-logo.png";
   ngOnInit() {
     this.width = window.innerWidth;

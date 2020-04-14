@@ -11,5 +11,10 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 1300px;
+  max-width: 1300px;
+}
+.banner{
+  padding: 45px 0 50px;
+  max-width: 100%;
+  margin: 0 auto;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 import { ProductsService } from "src/app/_services/products.service";
 import { AdvertisementsService } from "src/app/_services/advertisements.service";
 
@@ -10,6 +10,12 @@ import { AdvertisementsService } from "src/app/_services/advertisements.service"
 export class ShopEverythingComponent implements OnInit {
   items: Array<any> = [];
   adc: String[] = [];
+  width: number
+
+	@HostListener('window:resize', ['$event'])
+	onResize(event) {
+		this.width = event.target.innerWidth;
+  }
 
   constructor(
     private productsService: ProductsService,
@@ -19,5 +25,7 @@ export class ShopEverythingComponent implements OnInit {
   ngOnInit() {
     this.items = this.productsService.items;
     this.adc = this.advertisementService.adc;
+    this.width = window.innerWidth;
+    
   }
 }

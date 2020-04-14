@@ -11,11 +11,11 @@ export class AdboxComponent implements OnInit {
   ngOnInit() {}
 
   ads: string[] = [
-    "assets/images/adver/1.jpg",
-    "assets/images/adver/2.jpg",
-    "assets/images/adver/3.jpg",
-    "assets/images/adver/4.jpg",
-    "assets/images/adver/5.jpg",
-    "assets/images/adver/6.jpg"
+    "assets/images/adver/1n.png",
+    "assets/images/adver/2n.png",
+    "assets/images/adver/3n.png",
+    "assets/images/adver/4n.png",
+    "assets/images/adver/5n.png",
+    "assets/images/adver/6n.png"
   ];
 }

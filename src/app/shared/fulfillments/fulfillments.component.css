@@ -16,8 +16,8 @@ li {
 }
 
 img {
-  width: 140px;
-  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
   /* margin-right: 20px; */
 }
 p {
