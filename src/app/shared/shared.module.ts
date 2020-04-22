@@ -14,6 +14,7 @@ import { ShopEverythingComponent } from "./shop-everything/shop-everything.compo
 import { AppRoutingModule } from "../app-routing.module";
 import { Ng2CarouselamosModule } from "ng2-carouselamos";
 import { WindowSizeDirective } from '../_directives/window-size.directive';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
@@ -31,7 +32,10 @@ import { WindowSizeDirective } from '../_directives/window-size.directive';
     ShopEverythingComponent,
     WindowSizeDirective
   ],
-  imports: [CommonModule, AppRoutingModule, Ng2CarouselamosModule],
+  imports: [CommonModule, 
+            AppRoutingModule, 
+            Ng2CarouselamosModule,
+            CarouselModule.forRoot()],
   exports: [
     AdbigComponent,
     AdboxComponent,

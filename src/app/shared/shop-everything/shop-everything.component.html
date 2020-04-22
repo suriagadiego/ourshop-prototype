@@ -1,3 +1,14 @@
+<p class="titles">Trial Version</p>
+<carousel [itemsPerSlide]="itemsPerSlide"
+          [singleSlideOffset]="false"
+          [interval]="false"
+          [indicatorsByChunk]="true">
+  <slide *ngFor="let slide of slides; let index=index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+  </slide>
+</carousel>
+
+
 <p class="titles">Work From Home Essentials</p>
 <!-- <h1>{{ new }}</h1> -->
 <div id="container">
