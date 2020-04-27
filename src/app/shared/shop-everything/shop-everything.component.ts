@@ -29,16 +29,27 @@ export class ShopEverythingComponent implements OnInit {
     this.adc = this.advertisementService.adc;
     this.width = window.innerWidth;
   }
-  itemsPerSlide = 3;
- 
+  itemsPerSlide = 5;
+
   slides = [
-    {image: 'assets/images/1.jpg'},
-    {image: 'assets/images/2.jpg'},
-    {image: 'assets/images/3.jpg'},
-    {image: 'assets/images/4.jpg'},
-    {image: 'assets/images/5.jpg'},
-    {image: 'assets/images/6.jpg'},
-    {image: 'assets/images/1.jpg'},
-    {image: 'assets/images/2.jpg'}
+    { image: "assets/images/1.jpg" },
+    { image: "assets/images/2.jpg" },
+    { image: "assets/images/3.jpg" },
+    { image: "assets/images/4.jpg" },
+    { image: "assets/images/5.jpg" },
+    { image: "assets/images/6.jpg" },
+    { image: "assets/images/1.jpg" },
+    { image: "assets/images/2.jpg" },
   ];
+
+  // getParams(params){
+  //   if(!params){
+  //     return
+  //   }
+  //   return params.length
+  // }
+
+  try(item) {
+    console.log(item.name);
+  }
 }

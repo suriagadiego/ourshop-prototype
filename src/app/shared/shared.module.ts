@@ -6,36 +6,31 @@ import { FooterComponent } from "./footer/footer.component";
 import { BrandsListComponent } from "./brands-list/brands-list.component";
 import { FulfillmentsComponent } from "./fulfillments/fulfillments.component";
 import { HeaderComponent } from "./header/header.component";
-import { ProductsComponent } from "./products/products.component";
 import { InflightDeliveryComponent } from "./inflight-delivery/inflight-delivery.component";
 import { HomeDeliveryComponent } from "./home-delivery/home-delivery.component";
 import { PickupAirportComponent } from "./pickup-airport/pickup-airport.component";
 import { ShopEverythingComponent } from "./shop-everything/shop-everything.component";
 import { AppRoutingModule } from "../app-routing.module";
-import { Ng2CarouselamosModule } from "ng2-carouselamos";
-import { WindowSizeDirective } from '../_directives/window-size.directive';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-
+import { WindowSizeDirective } from "../_directives/window-size.directive";
+import { CarouselModule } from "ngx-bootstrap/carousel";
+import { ProductsComponent } from "./products/products.component";
 
 @NgModule({
   declarations: [
     AdbigComponent,
+    ProductsComponent,
     AdboxComponent,
     BrandsListComponent,
     FooterComponent,
     FulfillmentsComponent,
     HeaderComponent,
-    ProductsComponent,
     InflightDeliveryComponent,
     HomeDeliveryComponent,
     PickupAirportComponent,
     ShopEverythingComponent,
-    WindowSizeDirective
+    WindowSizeDirective,
   ],
-  imports: [CommonModule, 
-            AppRoutingModule, 
-            Ng2CarouselamosModule,
-            CarouselModule.forRoot()],
+  imports: [CommonModule, AppRoutingModule, CarouselModule.forRoot()],
   exports: [
     AdbigComponent,
     AdboxComponent,
@@ -43,11 +38,11 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     FooterComponent,
     FulfillmentsComponent,
     HeaderComponent,
-    ProductsComponent,
     InflightDeliveryComponent,
     HomeDeliveryComponent,
     PickupAirportComponent,
-    ShopEverythingComponent
-  ]
+    ShopEverythingComponent,
+    ProductsComponent,
+  ],
 })
 export class SharedModule {}

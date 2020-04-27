@@ -14,10 +14,10 @@ li{
 }
 
  */
- *{
-   margin: 0;
-   padding: 0;
- }
+* {
+  margin: 0;
+  padding: 0;
+}
 .titles {
   font-size: 25px;
   margin-top: 20px;
@@ -58,4 +58,28 @@ img {
 }
 #right {
   margin-right: -30px;
+}
+::ng-deep .carousel-control-prev,
+::ng-deep .carousel-control-next {
+  width: 0px;
+}
+::ng-deep .carousel .carousel-control-prev-icon {
+  position: absolute;
+  left: -30px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+::ng-deep .carousel .carousel-control-next-icon {
+  position: absolute;
+  right: -30px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+::ng-deep .carousel-control-next-icon {
+  background-image: url("https://storage.googleapis.com/staging.pc-shop-260af.appspot.com/ic_keyboard_arrow_right_black_24px.svg");
+}
+::ng-deep .carousel-control-prev-icon {
+  background-image: url("/assets/images/left-arrow.png");
 }

@@ -4,10 +4,10 @@ import { Product } from "src/app/_models/product.model";
 @Component({
   selector: "app-products",
   templateUrl: "./products.component.html",
-  styleUrls: ["./products.component.css"]
+  styleUrls: ["./products.component.css"],
 })
 export class ProductsComponent implements OnInit {
-  @Input() itemss: Array<any> = [];
+  @Input() items: Array<any> = [];
   constructor() {}
 
   ngOnInit() {}

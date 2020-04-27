@@ -2,6 +2,11 @@
   <div>
     <app-header></app-header>
   </div>
+  <hr />
+  <p>here</p>
+  <app-product></app-product>
+  <p>end</p>
+  <hr />
   <div *ngIf="innerWidth > 993">
     <img src="assets/images/banner.jpg" width="100%" alt="banner" />
   </div>
@@ -14,7 +19,8 @@
       <app-adbox></app-adbox>
     </div>
     <div>
-      <router-outlet></router-outlet>
+      <!-- <router-outlet></router-outlet> -->
+      <app-shop-everything></app-shop-everything>
     </div>
   </div>
   <div class="footer">
