@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from "@angular/core";
 import { ProductsService } from "src/app/_services/products.service";
 import { AdvertisementsService } from "src/app/_services/advertisements.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-shop-everything",
@@ -21,7 +22,8 @@ export class ShopEverythingComponent implements OnInit {
 
   constructor(
     private productsService: ProductsService,
-    private advertisementService: AdvertisementsService
+    private advertisementService: AdvertisementsService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -30,15 +32,9 @@ export class ShopEverythingComponent implements OnInit {
     this.width = window.innerWidth;
   }
   itemsPerSlide = 5;
- 
-  slides = [
-    {image: 'assets/images/1.jpg'},
-    {image: 'assets/images/2.jpg'},
-    {image: 'assets/images/3.jpg'},
-    {image: 'assets/images/4.jpg'},
-    {image: 'assets/images/5.jpg'},
-    {image: 'assets/images/6.jpg'},
-    {image: 'assets/images/1.jpg'},
-    {image: 'assets/images/2.jpg'}
-  ];
+
+  productDisplay(item) {
+    this.router.navigate(["/product"]);
+    console.log(item);
+  }
 }

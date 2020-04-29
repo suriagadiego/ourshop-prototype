@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Avenir;
+  src: url(/assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: Avenir;
 }
 
 .footer {
@@ -13,7 +18,7 @@
   margin: 0 auto;
   max-width: 1300px;
 }
-.banner{
+.banner {
   padding: 45px 0 50px;
   max-width: 100%;
   margin: 0 auto;

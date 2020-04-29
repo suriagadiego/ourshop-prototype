@@ -1,0 +1,67 @@
+@font-face {
+  font-family: AvenirReg;
+  src: url(/assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+.wrapper {
+  max-height: 440px;
+  width: 352px;
+  height: 500px;
+  margin: 20px 0 !important;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  z-index: 0;
+}
+.delivery-option {
+  background-color: #efe6e0;
+  width: 70%;
+  padding: 10px;
+  height: 40px;
+  margin: 0 0 10px -20px;
+}
+.do-label {
+  margin: 15px 10px 0 15pxs;
+}
+.superscript {
+  font-size: 12px;
+  font-family: AvenirReg;
+}
+.city {
+  font-size: 15px;
+  font-family: AvenirReg;
+}
+hr {
+  margin: 15px 0;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+  margin: 0 15px 0 0;
+}
+.rect {
+  padding: 5px;
+  margin: 8px 10px;
+}
+
+.btn {
+  background-color: #f15b51;
+  border-radius: 0 !important;
+  color: white;
+  height: 50px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.qty {
+  font-family: AvenirReg;
+  font-size: 20px;
+  padding: 10px 0 10px 10px;
+}
+
+.drop {
+  border-radius: 0;
+  border: 1px solid black;
+  width: 90px;
+}

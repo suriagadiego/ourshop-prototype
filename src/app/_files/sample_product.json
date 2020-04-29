@@ -1,0 +1,235 @@
+{
+  "id": 34439,
+  "sku": "BLS-JAM",
+  "name": "Mekar Jambu",
+  "price": "49.000000",
+  "status": 1,
+  "extension_attributes": {
+    "website_ids": [
+      1
+    ],
+    "category_links": [
+      {
+        "position": 0,
+        "category_id": "7"
+      },
+      {
+        "position": 0,
+        "category_id": "706"
+      },
+      {
+        "position": 0,
+        "category_id": "829"
+      },
+      {
+        "position": 27,
+        "category_id": "840"
+      },
+      {
+        "position": 68,
+        "category_id": "637"
+      }
+    ],
+    "stock_item": {
+      "qty": 2,
+      "is_in_stock": true
+    },
+    "store_location": {
+      "values": [
+        "Home-Delivery"
+      ],
+      "type_id": "simple",
+      "options": [],
+      "products": [
+        {
+          "entity_id": "34438",
+          "sku": "BLS-JAM_HD",
+          "price": "49.000000",
+          "final_price": 49,
+          "status": 1,
+          "stock_item": {
+            "qty": 2,
+            "is_in_stock": true,
+            "max_sale_qty": 10000
+          },
+          "media_gallery_entries": [
+            {
+              "disabled": false,
+              "file": "/m/e/mekarjambu800.jpeg",
+              "id": 40436,
+              "media_type": "image"
+            }
+          ],
+          "image": "/m/e/mekarjambu800.jpeg",
+          "store_location": "Home-Delivery",
+          "store_hours": null,
+          "store_map": null
+        }
+      ],
+      "airports": [],
+      "shipping_countries": [
+        {
+          "code": "MY",
+          "value": "West Malaysia"
+        }
+      ],
+      "default": "Home-Delivery",
+      "default_options": []
+    },
+    "seller": {
+      "id": 117750,
+      "shop_name": "SO.LEK COSMETICS",
+      "email": "test_solekcosmetics@gmail.com",
+      "shop_url": "so.lekcosmetics",
+      "name": "SO.LEK COSMETICS",
+      "email_alert_list": "",
+      "international_delivery": null,
+      "merchant_guidelines": [
+        {
+          "code": "terms_home_delivery",
+          "value": "&lt;p&gt;SO.LEK Cosmetics is a halal-certified cosmetic brand that is located in the heart of Kuala Lumpur, Malaysia. This cosmetic brand was founded by siblings, Dahlia Nadirah &amp;amp; Luqman Hakim in 2016.&lt;/p&gt;"
+        }
+      ],
+      "delivery": {
+        "warehouse": "West Malaysia",
+        "international": null,
+        "local": "1 - 5 Working days"
+      }
+    },
+    "flight_details": {
+      "list": {
+        "Home-Delivery": {
+          "International": false,
+          "Domestic": false
+        }
+      },
+      "delivery_options": []
+    }
+  },
+  "product_links": [],
+  "media_gallery_entries": [
+    {
+      "id": 40437,
+      "media_type": "image",
+      "label": null,
+      "position": 0,
+      "disabled": false,
+      "types": [],
+      "file": "/m/e/mekarjambu800_1.jpeg"
+    }
+  ],
+  "custom_attributes": {
+    "description": {
+      "attribute_code": "description",
+      "value": "<p>Mekar (JAMBU)</p>\r\n<p>A pink rosy shade • Instant natural rosy glow • Lightweight • Hydrating • Not cakey • Sheen shine, it will make your skin glowing &amp; dewy • Long-lasting from AM to PM • Super-easy to blend in • Tips: dispense on two finger tips and blend onto your cheeks *Actual color applied may vary slightly depending on skin tone </p>"
+    },
+    "image": {
+      "attribute_code": "image",
+      "value": "/cache/b550ef049191df361eb8622a75ce9031/m/e/mekarjambu800_1.jpeg"
+    },
+    "url_key": {
+      "attribute_code": "url_key",
+      "value": "mekar-jambu"
+    },
+    "short_description": {
+      "attribute_code": "short_description",
+      "value": "<p>Ingredients:</p>\r\n<p>Talc, Ethylhexyl Methoxycinnamate, Caprylic / Capric Triglyceride, Isononyl Isononanoate Titanium Dioxide, Mica, Dimenthicone, Sunset Yellow, Petrolatum, Isopropyl Myristate, Hydrogenated, Polyisobutene, Aluminium Starch Octenylsuccinate, BHT, Cocos Nucifera (Coconut) Oil, Collagen, Propolis Extract, Tocopheryl Acetate, Fragrance, Phenoxyethanol, Caprylyl Glycol, May contain : Cl 77491 &amp; Cl42090</p>"
+    },
+    "small_image": {
+      "attribute_code": "small_image",
+      "value": "/cache/62f6ef3e9fe40b2ca3f1aa5841f42e2a/m/e/mekarjambu800_1.jpeg"
+    },
+    "meta_title": {
+      "attribute_code": "meta_title",
+      "value": "Mekar Jambu"
+    },
+    "is_home_delivery": {
+      "attribute_code": "is_home_delivery",
+      "value": "1"
+    },
+    "thumbnail": {
+      "attribute_code": "thumbnail",
+      "value": "/cache/8f92784e755abb64d1266b7456be97bb/m/e/mekarjambu800_1.jpeg"
+    },
+    "usd_final_price": {
+      "attribute_code": "usd_final_price",
+      "value": "11.310000"
+    },
+    "manufacturer": {
+      "attribute_code": "manufacturer",
+      "value": "1281",
+      "name": "SO.LEK",
+      "url_key": null
+    },
+    "bnd_final_price": {
+      "attribute_code": "bnd_final_price",
+      "value": "16.000000"
+    },
+    "krw_final_price": {
+      "attribute_code": "krw_final_price",
+      "value": "13611.110000"
+    },
+    "seller": {
+      "attribute_code": "seller",
+      "value": "117750"
+    },
+    "msrp_display_actual_price_type": {
+      "attribute_code": "msrp_display_actual_price_type",
+      "value": "0"
+    },
+    "twd_final_price": {
+      "attribute_code": "twd_final_price",
+      "value": "339.330000"
+    },
+    "vnd_final_price": {
+      "attribute_code": "vnd_final_price",
+      "value": "245000.000000"
+    },
+    "category_ids": {
+      "attribute_code": "category_ids",
+      "value": [
+        "7",
+        "706",
+        "829",
+        "840",
+        "637"
+      ]
+    },
+    "base_currency": {
+      "attribute_code": "base_currency",
+      "value": "MYR"
+    },
+    "is_bestseller": {
+      "attribute_code": "is_bestseller",
+      "value": "0"
+    },
+    "new_arrival": {
+      "attribute_code": "new_arrival",
+      "value": "1"
+    },
+    "online_only": {
+      "attribute_code": "online_only",
+      "value": "0"
+    },
+    "is_free_gift": {
+      "attribute_code": "is_free_gift",
+      "value": "0"
+    },
+    "is_sis_brand_page": {
+      "attribute_code": "is_sis_brand_page",
+      "value": "0"
+    }
+  },
+  "prices": {
+    "price": 49,
+    "currency": "MYR",
+    "price_from": false,
+    "store_location": "Home-Delivery",
+    "store_location_options": [],
+    "stock_item": {
+      "qty": 2,
+      "is_in_stock": true
+    }
+  },
+  "final_price": 49
+}

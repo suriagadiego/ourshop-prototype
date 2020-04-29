@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  max-width: 100%;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.image {
+  flex: 0 0 40%;
+  padding-right: 20px;
+}
+
+.info {
+  flex: 1;
+  padding: 0 20px;
+}

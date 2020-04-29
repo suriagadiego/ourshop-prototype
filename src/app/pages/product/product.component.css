@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  max-width: 100%;
+}
+.prod-main {
+  flex: 0 0 70%;
+}
+
+.prod-opt {
+  flex: 1;
+}

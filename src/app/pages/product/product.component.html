@@ -1,3 +1,14 @@
-<p>Home/ try try </p>
-<hr>
-<app-product-main></app-product-main>
+<hr />
+<div class="container">
+  <div class="prod-main">
+    <app-product-main [samp]></app-product-main>
+  </div>
+  <div class="prod-opt">
+    <app-product-options></app-product-options>
+  </div>
+</div>
+
+<img src="{{ samp.media_gallery_entries[0].file }}" alt="" />
+<div>
+  <h1>{{ samp.media_gallery_entries[0].file }}</h1>
+</div>

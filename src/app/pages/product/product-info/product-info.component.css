@@ -1,0 +1,23 @@
+@font-face {
+  font-family: AvenirReg;
+  src: url(/assets/fonts/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+.main {
+  padding: 20px 0;
+}
+
+.name {
+  font-size: 12px;
+}
+.product {
+  padding: 20px 0 10px;
+  font-size: 20px;
+  font-family: AvenirReg;
+}
+.desc {
+  height: 90px;
+}
+.desc-label {
+  display: inline-block;
+  color: black;
+}

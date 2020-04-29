@@ -3,24 +3,16 @@
     <app-header></app-header>
   </div>
   <hr />
-  <p>here</p>
-  <app-product></app-product>
-  <p>end</p>
-  <hr />
-  <div *ngIf="innerWidth > 993">
-    <img src="assets/images/banner.jpg" width="100%" alt="banner" />
-  </div>
-  <div *ngIf="innerWidth < 993">
-    <img src="assets/images/banner2.jpg" width="100%" alt="banner" />
-  </div>
-  <!-- <app-fulfillments></app-fulfillments> -->
+  <!-- <p>here</p>
   <div class="wrapper">
-    <div class="ads banner">
-      <app-adbox></app-adbox>
-    </div>
+    <app-product></app-product>
+  </div>
+  <p>end</p> -->
+  <hr />
+  <div class="wrapper">
     <div>
-      <!-- <router-outlet></router-outlet> -->
-      <app-shop-everything></app-shop-everything>
+      <router-outlet></router-outlet>
+      <!-- <app-shop-everything></app-shop-everything> -->
     </div>
   </div>
   <div class="footer">

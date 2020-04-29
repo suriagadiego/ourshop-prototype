@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-product-main',
-  templateUrl: './product-main.component.html',
-  styleUrls: ['./product-main.component.css']
+  selector: "app-product-main",
+  templateUrl: "./product-main.component.html",
+  styleUrls: ["./product-main.component.css"],
 })
 export class ProductMainComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Input() samp: Array<any> = [];
+  constructor() {}
+  exam = this.samp;
+  ngOnInit() {}
 }

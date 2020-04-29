@@ -1,3 +1,12 @@
+<div *ngIf="innerWidth > 993">
+  <img src="assets/images/banner.jpg" width="100%" alt="banner" />
+</div>
+<div *ngIf="innerWidth < 993">
+  <img src="assets/images/banner2.jpg" width="100%" alt="banner" />
+</div>
+<div class="ads banner">
+  <app-adbox></app-adbox>
+</div>
 <p class="titles">Trial Version</p>
 <carousel
   [itemsPerSlide]="itemsPerSlide"
@@ -6,7 +15,7 @@
   [indicatorsByChunk]="true"
 >
   <slide *ngFor="let item of items; let i = index">
-    <div (click)="try(item)">
+    <div (click)="productDisplay(item)">
       <app-products [items]="item"></app-products>
     </div>
   </slide>
