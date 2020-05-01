@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./product-options.component.css"],
 })
 export class ProductOptionsComponent implements OnInit {
-  @Input("prodItem") items: Array<string> = [];
+  @Input() samp: Array<String> = [];
   constructor() {}
 
   ngOnInit() {}

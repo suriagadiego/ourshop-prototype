@@ -13,6 +13,7 @@ export class ShopEverythingComponent implements OnInit {
   adc: String[] = [];
   width: number;
   new: number;
+  itemProduct: Array<string> = [];
   @HostListener("window:resize", ["$event"])
   onResize(event) {
     this.width = event.target.innerWidth;
@@ -35,6 +36,11 @@ export class ShopEverythingComponent implements OnInit {
 
   productDisplay(item) {
     this.router.navigate(["/product"]);
-    console.log(item);
+    this.itemProduct = item;
+    console.log("data to be passed ", this.itemProduct);
+  }
+
+  get itemValue() {
+    return this.itemProduct;
   }
 }

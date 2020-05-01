@@ -6,10 +6,8 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./product-info.component.css"],
 })
 export class ProductInfoComponent implements OnInit {
-  @Input() exam: Array<string> = [];
+  @Input() samp: Array<any> = [];
   constructor() {}
 
-  ngOnInit() {
-    console.log(this.exam);
-  }
+  ngOnInit() {}
 }
