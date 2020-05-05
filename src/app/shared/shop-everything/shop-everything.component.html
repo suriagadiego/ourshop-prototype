@@ -29,7 +29,9 @@
   [indicatorsByChunk]="true"
 >
   <slide *ngFor="let item of items; let i = index">
-    <app-products [items]="item"></app-products>
+    <div (click)="tryService()">
+      <app-products [items]="item"></app-products>
+    </div>
   </slide>
 </carousel>
 

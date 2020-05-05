@@ -17,6 +17,7 @@ import { ProductsComponent } from "./products/products.component";
 
 @NgModule({
   declarations: [
+    HeaderComponent,
     AdbigComponent,
     ProductsComponent,
     AdboxComponent,
@@ -32,6 +33,7 @@ import { ProductsComponent } from "./products/products.component";
   ],
   imports: [CommonModule, AppRoutingModule, CarouselModule.forRoot()],
   exports: [
+    HeaderComponent,
     AdbigComponent,
     AdboxComponent,
     BrandsListComponent,

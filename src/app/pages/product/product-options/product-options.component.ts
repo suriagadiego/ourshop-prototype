@@ -10,4 +10,8 @@ export class ProductOptionsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  get() {
+    return "hello ^___^";
+  }
 }

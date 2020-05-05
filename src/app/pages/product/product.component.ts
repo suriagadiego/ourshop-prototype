@@ -14,8 +14,8 @@ export class ProductComponent implements OnInit {
   @Input() itemProduct: Array<String> = [];
 
   ngOnInit() {
-    // this.samp = this.productsService.sampol;
+    this.item = this.productsService.item;
     // this.item = ShopEverythingComponent.itemValue();
-    console.log("TO RCV");
+    console.log("rCVD!!", this.productsService.item);
   }
 }
