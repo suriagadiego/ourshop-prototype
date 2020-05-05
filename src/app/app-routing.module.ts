@@ -15,7 +15,12 @@ const appRoutes: Routes = [
   { path: "inflight-delivery", component: InflightDeliveryComponent },
   { path: "pickup-at-airport", component: PickupAirportComponent },
   { path: "home-delivery", component: HomeDeliveryComponent },
-  { path: "product", component: ProductComponent },
+  { path: "product", component: ProductComponent, children:[
+    {path: "", component: ProductComponent },
+    {path: ":id", component: ProductComponent }
+
+  ]
+},
 ];
 
 @NgModule({

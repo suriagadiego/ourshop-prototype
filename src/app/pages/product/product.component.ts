@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { ProductsService } from "src/app/_services/products.service";
+import { ActivatedRoute } from "@angular/router"
 import { Product } from "src/app/_models/product.model";
 import { ShopEverythingComponent } from "src/app/shared/shop-everything/shop-everything.component";
 
@@ -9,13 +10,16 @@ import { ShopEverythingComponent } from "src/app/shared/shop-everything/shop-eve
   styleUrls: ["./product.component.css"],
 })
 export class ProductComponent implements OnInit {
-  constructor(private productsService: ProductsService) {}
-  item: Array<any> = [];
+  id: number;
+  constructor(
+      private productsService: ProductsService,
+      private route: ActivatedRoute
+    ) {}
+  item
   @Input() itemProduct: Array<String> = [];
 
   ngOnInit() {
-    this.item = this.productsService.item;
-    // this.item = ShopEverythingComponent.itemValue();
-    console.log("rCVD!!", this.productsService.item);
+    const id = this.route.snapshot.params['id']
+    this.item = this.productsService.getItem(this.id)
   }
 }

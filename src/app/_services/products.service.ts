@@ -11,5 +11,9 @@ export class ProductsService {
 
   public items: { items: [] }[] = sampleitems.items;
   public sampol: { sampol: [] }[] = sample_product;
-  public item: { item: [] }[] = sample_product;
+
+  getItem(index: number){
+    return this.items[index]
+  }
+  
 }

@@ -35,7 +35,5 @@ export class ShopEverythingComponent implements OnInit {
   itemsPerSlide = 5;
   productDisplay(item) {
     this.router.navigate(["/product"]);
-    this.productsService.item = item;
-    console.log("data to be passed ", this.productsService.item);
   }
 }
